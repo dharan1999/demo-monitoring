@@ -1,13 +1,14 @@
 const express = require('express');
 const app = express();
-const PORT = 3000;
+const PORT = 8080;
+const path = require('path');
 
 // Middleware to parse JSON
 app.use(express.json());
 
 // Sample route
 app.get('/', (req, res) => {
-    res.send('Hello, World!');
+    res.sendFile(path.join(__dirname, '/index.html')); // Update this line
 });
 
 // Start the server
