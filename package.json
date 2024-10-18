@@ -10,6 +10,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@azure/core-tracing": "^1.2.0",
+    "@azure/opentelemetry-instrumentation-azure-sdk": "^1.0.0-beta.7",
+    "applicationinsights": "^3.3.0",
     "express": "^4.21.1",
     "path": "^0.12.7"
   }
